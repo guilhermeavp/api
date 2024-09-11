@@ -1,0 +1,40 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API gateway",
+  "author": "Guilherme Augusto Vieira Penteado",
+  "license": "MIT",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint",
+    "start": "nodemon --watch src src/server.ts"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@hapi/h2o2": "^10.0.0",
+    "@hapi/hapi": "^20.2.2",
+    "aguid": "^2.0.0",
+    "axios": "^1.7.2",
+    "consul": "^1.1.0",
+    "dotenv": "^16.4.5",
+    "hapi-auth-jwt2": "^10.5.1",
+    "mongoose": "^8.4.0"
+  },
+  "devDependencies": {
+    "@types/consul": "^0.40.0",
+    "@types/hapi__h2o2": "^8.3.3",
+    "@types/hapi__hapi": "^20.0.13",
+    "@types/node": "^18.8.4",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.0.1",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4"
+  }
+}
